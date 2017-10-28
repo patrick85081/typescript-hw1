@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,21 +9,29 @@
 </head>
 <body>
     價格 <input type="number" name="" id="price" />
-    <br />
+    <br /> 
     數量 <input type="number" name="" id="qty" />
-    <br />
-    Level 
+    <br /> 
+    Level
     <select name="level" id="level">
         <option value="1">Normal</option>
         <option value="2">VIP</option>
     </select>
 
     <button id="calculate">計算</button>
-    <br />
+    <br /> 
     Result <sapn id="result"></span>
 
-    
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/discounters/IDiscounter.js"></script>
+    <script src="./js/discounters/Level.js"></script>
+    <script src="./js/discounters/NonDiscounter.js"></script>
+    <script src="./js/discounters/NormalDiscounter.js"></script>
+    <script src="./js/discounters/VIPDiscounter.js"></script>
+    <script src="./js/ShoppingModel.js"></script>
+    <script src="./js/ShoppingCart.js"></script>
+    <script src="./js/discounters/DiscounterFactory.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
